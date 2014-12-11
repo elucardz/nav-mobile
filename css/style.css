@@ -77,6 +77,10 @@ html, body, a {
 p
 {
 	font-size:20px;
+	position: relative;
+min-height: 1px;
+padding-left: 15px;
+padding-right: 15px;
 }
 
 h1, h2 {
@@ -274,10 +278,4 @@ font-size: 30px;
 .blackText
 {
 	color:#000;
-}
-
-@media screen and (max-width: 840px) {
-
-   p{font-size: 13px;}
-	
 }
