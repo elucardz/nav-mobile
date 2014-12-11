@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Reset Start */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face 
+{
+	font-family: Rotis SansSerif;
+  src: url('Rotis SansSerif 65 Bold.otf');
+}
+
+h1, h4 {
+	font-family: "Rotis SansSerif AT", Arial, Helvetica, sans-serif; 
+}
+
+.center-align-top
+{
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* Reset End */
+
+html, body, a {
+	color: #FFF;
+	font-family: Rotis SansSerif, sans-serif; 
+}
+
+p
+{
+	font-size:20px;
+}
+
+h1, h2 {
+font-size: 40px;
+}
+
+.top-buffer {
+margin-top: 20px !important;
+}
+
+.align-left, .align-left * {
+text-align: left !important;
+}
+
+.center-align-bottom
+{
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.inner-content
+{
+  background-color: transparent;
+  border: 300px solid #6691aa;
+  border-radius: 50%;
+  height: 135%;
+  width: 70%;
+  overflow: hidden;
+  box-sizing: initial;
+}
+
+.blue-page .content
+{
+  position: relative;
+  background: #6691aa;
+  min-height:500px;
+}
+
+.inner-content-no-border
+{
+  background-color: transparent;
+  border-radius: 50%;
+  height: 135%;
+  width: 70%;
+  overflow: hidden;
+  box-sizing: initial;
+}
+
+.outer-content
+{
+  height: 150px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.textContent
+{
+margin: 0px auto;
+float: none;
+width: 80%;
+text-align:center;
+}
+
+.textContent p {
+margin: 0px auto;
+float: none;
+width: 70%;
+text-align: center;
+}
+
+.blue-page .textContent h1
+{
+	margin-bottom:20px;
+}
+
+#navitaireDifference
+{
+	background: url('../img/map.jpg') no-repeat center center; 
+}
+
+#navitaireDifference .selectionButtonDiv a
+{
+	font-size: 25px;
+}
+
+
+#newsAndEvents
+{
+	background: url('../img/conference.jpg') no-repeat center center; 
+}
+
+#home
+{
+  background: url('../img/airplanes.jpg') no-repeat center center; 
+}
+
+#home h1
+{
+	font-size:55px;
+}
+
+#home p
+{
+	font-size:25px;
+}
+
+.navitaire-img-page
+{
+	background-size:cover !important;
+	min-height:980px !important;
+	margin-top:-120px;
+	margin-bottom:-120px;
+}
+
+.imgContent
+{
+	margin-top:220px;
+}
+
+html,body,a
+{
+	color:#fff;
+}
+
+.textShadow
+{
+	text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.75);
+}
+
+.navbar
+{
+	width:100%;
+}
+
+.selectionButtonDiv a:hover {
+text-decoration: none;
+color: #000;
+}
+.selectionButtonDiv a {
+font-size: 40px;
+letter-spacing: 10px;
+width: 100%;
+display: block;
+text-align: center;
+}
+
+.selectionButtonDiv {
+padding: 10px 50px !important;
+border-radius: 10px;
+border: 3px solid white;
+width: 400px;
+float: none;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+margin-top: 25%;
+z-index: 100;
+}
+
+#footer
+{
+	background-color: #4CAAD2;
+	padding:10px 0px;
+	height:20%;
+}
+
+#footer p
+{
+	font-size:20px;
+	width:auto;
+}
+
+.margin-top-5p
+{
+	margin-top: 5% !important;
+}
+
+#newsAndEvents .selectionButtonDiv a {
+font-size: 25px;
+}
+
+#newsAndEvents .selectionButtonDiv
+{
+	padding:0px !important;
+}
+
+#contact .selectionButtonDiv a {
+font-size: 30px;
+}
+
+.blackText
+{
+	color:#000;
+}
+
+@media screen and (max-width: 840px) {
+
+   p{font-size: 13px;}
+	
+}
