@@ -76,7 +76,7 @@ html, body, a {
 
 p
 {
-	font-size:20px;
+	font-size:25px;
 	position: relative;
 min-height: 1px;
 padding-left: 15px;
@@ -188,7 +188,17 @@ text-align: center;
 
 #home p
 {
-	font-size:25px;
+font-size: 25px;
+margin-top: 10%;
+letter-spacing: 2px;
+}
+
+#productsDiv
+{
+	margin-top: 50%;
+text-align: center;
+font-size: 40px;
+z-index: 200;
 }
 
 .navitaire-img-page
@@ -217,6 +227,8 @@ html,body,a
 .navbar
 {
 	width:100%;
+	background-color: #4CAAD2;
+	border: none;
 }
 
 .selectionButtonDiv a:hover {
@@ -240,7 +252,7 @@ float: none;
 margin-left: auto;
 margin-right: auto;
 text-align: center;
-margin-top: 25%;
+margin-top: 15%;
 z-index: 100;
 }
 
@@ -268,7 +280,7 @@ font-size: 25px;
 
 #newsAndEvents .selectionButtonDiv
 {
-	padding:0px !important;
+	padding:5px !important;
 }
 
 #contact .selectionButtonDiv a {
@@ -278,4 +290,49 @@ font-size: 30px;
 .blackText
 {
 	color:#000;
+}
+
+#menu {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#menu_multilevelpushmenu
+{
+	position:fixed;
+}
+
+.levelHolderClass ul li
+{
+	text-align:left !important;
+}
+
+.icon-bar {
+background-color: #fff;
+}
+.icon-bar {
+display: block;
+width: 25px;
+height: 4px;
+border-radius: 1px;
+}
+
+.navbar-new {
+position: relative;
+float: right;
+margin-right: 15px;
+padding: 9px 10px;
+margin-top: 15px;
+margin-bottom: 8px;
+background-color:#4CAAD2;
+}
+.navbar-new .icon-bar+.icon-bar {
+margin-top: 8px;
+}
+.navbar-header
+{
+	position:absolute;
+	z-index:100;
+	top:-40px;
 }

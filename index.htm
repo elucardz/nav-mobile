@@ -4,35 +4,32 @@
 		<title>Nav mobile</title>
 		<meta id="meta1" name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, maximum-scale=1, user-scalable=no">
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/jquery.multilevelpushmenu.css" />
 	</head>
-	<body>
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="container">
-				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-				<div class="navbar-header">
-				<a href="#" class="navbar-brand">Site</a>
-				</div>
+	<body>	
 
-				<div class="collapse navbar-collapse navHeaderCollapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Home</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		
-
-		
-		
-		<div class="container">
-						<div class="visible-xs">
-		asd</div>
-		<div id="home" class="row page-div navitaire-img-page greyscale textShadow">
+<nav id="nav-bar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+			<img src="img/navitaire-logo.png" style="width:350px" alt="logo" />
+        </div>
+        <div id="navbar" class="navbar">
+		<button id="menu-open" type="button" class="btn navbar-btn navbar-new">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	
+    <div class="container">
+        <div id="bodyDiv">
+            <div class="row">
+                <div id="pushobj" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div id="home" class="row page-div navitaire-img-page greyscale textShadow">
 			<div class="row col-xs-10 col-xs-offset-2 padding-15 imgContent">
 				<h1>Great airplanes</h1>
 				<h1>make their own rules.</h1>
@@ -150,8 +147,73 @@
 		  </div>
 		</div>
 		</div>
+
+						<!--
+						Custom Navigation Start
+						!-->
+				
+                <div id="menu">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Products</a>
+                                <h2>Products</h2>
+									<ul>
+										<li><a href="http://navitaire.com/p_new_skies.aspx">New Skies Reservation System</a></li>
+										<li><a href="http://navitaire.com/p_loyalty.aspx">Navitaire Loyalty</a></li>
+										<li><a href="http://navitaire.com/p_travel_commerce.aspx">Travel Commerce</a></li>
+										<li><a href="http://navitaire.com/p_planning.aspx">Planning Optimization Suite</a></li>
+										<li><a href="http://navitaire.com/p_geneva.aspx">Geneva Operations Management</a></li>
+										<li><a href="http://navitaire.com/p_solver.aspx">SkySolver Recovery Suite</a></li>
+										<li><a href="http://navitaire.com/p_pra.aspx">PRA System Revenue Accounting</a></li>
+										<li><a href="http://navitaire.com/p_assist.aspx">Navitaire Interline AsSIST</a></li>
+										<li><a href="http://navitaire.com/p_skyledger.aspx">SkyLedger Revenue Accounting</a></li>
+										<li><a href="http://navitaire.com/p_skyprice.aspx">SkyPrice Revenue Management</a></li>
+										<li><a href="http://navitaire.com/p_air_cargo.aspx">Accenture Air Freight</a></li>
+									</ul>
+                            </li>
+                            							<li><a href="#navitaireDifference" class="gotoElement">Navitaire Difference</a></li>
+							<li><a href="#customers" class="gotoElement">Our Customers</a></li>
+							<li><a href="#newsAndEvents" class="gotoElement">News & Events</a></li>
+							<li><a href="#contact" class="gotoElement">Contact Us</a></li>
+							<li><a href="#contact" class="gotoElement">Careers</a></li>
+							<li><a href="#contact" class="gotoElement">FAQs</a></li>
+                        </ul>
+                    </nav>
+                </div>
+				
+						<!--
+						Custom Navigation End
+						!-->
+
+		   </div>
+        </div>
+    </div>
 		
 		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://oss.maxcdn.com/libs/modernizr/2.6.2/modernizr.min.js"></script>
+		<script type="text/javascript" src="js/jquery.multilevelpushmenu.min.js"></script>
+		
+				  <script>
+$(document).ready(function () {
+    $('#menu').multilevelpushmenu({
+        containersToPush: [$('#pushobj'),$('#nav-bar')],
+        menuWidth: '70%',
+        menuHeight: '100%',
+				direction: 'rtl',
+        fullCollapse: true,
+		collapsed:true
+    });
+    $('#menu').multilevelpushmenu('option', 'menuHeight', $(document).height());
+    $('#menu').multilevelpushmenu('redraw');
+});
+  </script>
+  <script type="text/javascript" src="js/script.js"></script>
+  
 	</body>
 </html>
