@@ -140,6 +140,11 @@ text-align: left !important;
   overflow: hidden;
 }
 
+.minimized
+{
+	width:0px !important;
+}
+
 .textContent
 {
 margin: 0px auto;
@@ -224,11 +229,20 @@ html,body,a
 	text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.75);
 }
 
+#nav-bar div.container
+{
+	    -webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+    transition: all 1s;
+}
+
 .navbar
 {
 	width:100%;
 	background-color: #4CAAD2;
 	border: none;
+	height:91px;
+	-webkit-transition: width 1s, background-color 0.3s;
+	transition: width 1s, background-color 0.3s;
 }
 
 .selectionButtonDiv a:hover {
@@ -292,6 +306,23 @@ font-size: 30px;
 	color:#000;
 }
 
+#pleaseWaitDialog
+{
+width: 100%;
+height: 100%;
+background-color:white;
+text-align:center;
+display:block;
+z-index:1000;
+    -webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+    transition: all 1s;
+}
+
+.overflow-hidden
+{
+	overflow:hidden;
+}
+
 #menu {
 	position: absolute;
 	top: 0px;
@@ -301,6 +332,12 @@ font-size: 30px;
 #menu_multilevelpushmenu
 {
 	position:fixed;
+}
+
+.transparent
+{
+	opacity:0 !important;
+	z-index: 0 !important;
 }
 
 .levelHolderClass ul li

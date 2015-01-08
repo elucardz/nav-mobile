@@ -1,0 +1,486 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+html, body, a {
+	color: #FFF;
+	font-family: Rotis SansSerif, sans-serif; 
+}
+
+html, body
+{
+	height:100%;
+	background: #A5D1E2;
+}
+
+p
+{
+	font-size:20px;
+}
+
+h1,h2
+{
+	font-size:320%;
+}
+
+@font-face 
+{
+	font-family: Rotis SansSerif;
+  src: url('Rotis SansSerif 65 Bold.otf');
+}
+
+.navbar
+{
+	width:100%;
+	background-color: #4CAAD2;
+	border: none;
+}
+
+#menu {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#menu_multilevelpushmenu
+{
+	position:fixed;
+}
+
+.levelHolderClass ul li
+{
+	text-align:left !important;
+}
+
+.icon-bar {
+background-color: #fff;
+}
+.icon-bar {
+display: block;
+width: 25px;
+height: 4px;
+border-radius: 1px;
+}
+
+.navbar-new {
+position: relative;
+float: right;
+margin-right: 15px;
+padding: 9px 10px;
+margin-top: 15px;
+margin-bottom: 8px;
+background-color:#4CAAD2;
+}
+.navbar-new .icon-bar+.icon-bar {
+margin-top: 8px;
+}
+.navbar-header
+{
+	position:absolute;
+	z-index:100;
+	top:-40px;
+}
+
+#contents
+{
+	width:100%;
+	height:100%;
+}
+
+#pleaseWaitDialog.transparent
+{
+	opacity:0;
+	z-index:0;
+}
+
+#products
+{
+padding-top: 0px;
+}
+
+#products-inner-2
+{
+	height:100%;
+
+}
+
+#productsDiv
+{
+margin-top: 50%;
+text-align: center;
+font-size: 40px;
+z-index:200;
+}
+
+#contact .selectionButtonDiv a
+{
+	font-size: 30px;
+}
+
+#newsAndEvents .selectionButtonDiv
+{
+	padding:0px;
+}
+
+#newsAndEvents .selectionButtonDiv a
+{
+	font-size: 25px;
+}
+
+#navitaireDifference .selectionButtonDiv
+{
+	padding:0px;
+}
+
+#navitaireDifference .selectionButtonDiv a
+{
+	font-size: 25px;
+}
+
+#navitaireDifference-inner-1 .content
+{
+	background-color:#EEEEEE;
+}
+
+#navitaireDifference-inner-1 .inner-content
+{
+	border-color: #EEEEEE;
+}
+
+#navitaireDifference-inner-1 .inner-content-no-border
+{
+	background-color: #EEEEEE;
+}
+
+#products-inner-1,#customers-inner-1
+{
+	background-color:#EEEEEE;
+	height:768px;
+}
+
+#products-inner-1 .textContent *,#customers-inner-1 .textContent *
+{
+	text-align:left;
+	width:100%;
+}
+
+#products-inner-1 .imgContent,#customers-inner-1 .textContent
+{
+	margin-top:35%;
+}
+
+#products-inner-1 h4,#customers-inner-1 h4,#navitaireDifference-inner-1 h4 {
+	color: #00518b;
+	font-size: 25px;	
+}
+
+#products-inner-2 .content,#customers-inner-2 .content, #navitaireDifference-inner-2 .content
+{
+	padding:0 10%;
+}
+
+#customers-inner-2
+{
+	height:1250px;
+}
+
+#customers-inner-2 h3
+{
+	margin: 0 auto 15px auto;
+	width:70%;
+}
+
+#navitaireDifference-inner-1
+{
+	height:400px;
+	margin-top:-100px;
+}
+
+#navitaireDifference-inner-2
+{
+	height: 900px;
+	margin-top: 10%;
+	padding-top: 200px;
+	background: url('../img/nav-diff-bg.png') no-repeat center center;
+}
+
+#navitaireDifference-inner-2 p
+{
+	color:#00518B;
+}
+
+.tailfinsContent
+{
+	padding:0px !important;
+}
+
+.tailFin
+{
+	height:150px;
+}
+
+.tailFin img
+{
+	width:280px;
+}
+
+.textShadow
+{
+	text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.75);
+}
+
+.page-div
+{
+  height: 1050px;
+}
+
+.center-align-top
+{
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.center-align-bottom
+{
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.inner-content
+{
+  background-color: transparent;
+  border: 300px solid #6691aa;
+  border-radius: 50%;
+  height: 135%;
+  width: 70%;
+  overflow: hidden;
+  box-sizing: initial;
+}
+
+.inner-content-no-border
+{
+  background-color: transparent;
+  border-radius: 50%;
+  height: 135%;
+  width: 70%;
+  overflow: hidden;
+  box-sizing: initial;
+}
+
+.outer-content
+{
+  height: 150px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-buffer
+{
+	margin-top:20px !important;
+}
+
+.align-right,.align-right *
+{
+	text-align:right !important;
+}
+
+.align-left,.align-left *
+{
+	text-align:left !important;
+}
+
+.blackText
+{
+	color:#000;
+}
+
+.container
+{
+	height: 100%;
+	max-width:768px;
+	max-height:1280px;
+}
+
+.padding-15
+{
+	padding-top: 15%;
+}
+
+.blue-page
+{
+  margin-top: -200px;
+  padding-top: 100px;
+  position:relative;
+  z-index:100;
+  height:auto !important;
+}
+
+.blue-page .content
+{
+  position: relative;
+  background: #6691aa;
+
+}
+
+.textContent
+{
+margin: 0px auto;
+float: none;
+width: 80%;
+text-align:center;
+}
+
+.textContent p
+{
+margin: 0px auto;
+float: none;
+width: 70%;
+text-align:center;
+}
+
+.navitaire-img-page
+{
+  margin-top: -20%;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.learn-more
+{
+  margin-left: 40%;
+}
+
+.imgContent
+{
+	margin-top:28%;
+	text-shadow:0;
+}
+
+.selectionButtonDiv:hover
+{
+border-color:#000;
+}
+
+
+.selectionButtonDiv a:hover
+{
+text-decoration:none;
+color:#000;
+}
+
+.selectionButtonDiv a
+{
+font-size: 40px;
+letter-spacing: 10px;
+width:100%;
+display:block;
+text-align:center;
+}
+
+.selectionButtonDiv
+{
+padding:10px 50px;
+border-radius: 10px;
+border: 3px solid white;
+width: 400px;
+float: none;
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+margin-top: 25%;
+z-index:100;
+}
+
+.innerPage a
+{
+	color: #0085C5 !important;
+	text-decoration: underline !important;
+}
+
+.greyscale
+{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(grayscale.svg); /* Firefox 4+ */
+  filter: gray; /* IE 6-9 */
+}
+
+
+.greyscale:hover
+{
+	filter:none;
+	-webkit-filter: none;
+}
+
+.nopadding {
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 3px;	
+}
+
+.top-buffer {
+	margin-top: 20px;
+}
+
+.headerspace {
+	margin-left: 10px;
+}
+
+.innerPage h1{
+	color: #003f85;
+}
+
+.innerPage h4
+{
+font-size:200%;
+color: #00518B;
+}
+.innerPage p,
+.innerPage h3 {
+	color: #000;
+}
+
+.yellowArrow
+{
+	background: url('../img/yellow-arrow-1.gif');
+}
+
+.white *
+{
+	border-color:white !important;
+}
+
+.white .content
+{
+	background:white !important;
+}
+
+.minimized
+{
+	position:relative;
+	bottom:1000px;
+	z-index:-1;
+}
+
+.hidden
+{
+	display:none;
+}
